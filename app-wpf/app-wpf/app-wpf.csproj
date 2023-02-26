@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>app_wpf</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\hombre.png" />
+    <None Remove="View\icoKey.png" />
+    <None Remove="View\icoUser.png" />
+    <None Remove="View\llave.png" />
+    <None Remove="View\login.png" />
+    <None Remove="View\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="6.2.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\hombre.png" />
+    <Resource Include="View\icoKey.png" />
+    <Resource Include="View\icoUser.png" />
+    <Resource Include="View\llave.png" />
+    <Resource Include="View\login.png" />
+    <Resource Include="View\logo.png" />
+  </ItemGroup>
+
+</Project>
